@@ -12,26 +12,7 @@
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script language="javascript" type="text/javascript">
-      angular.module('app', []);
-      
-      //Whatever you put on the controller scope,
-      //will be availalble in the HTML element bound to the controller.
-      function MyController($scope){
-        $scope.newMessage = "type in the message here";
-        $scope.messages = ["What's up?????", "Yo!!!!!"]; 
-        
-        $scope.add = function(){
-          $scope.messages.push($scope.newMessage);
-        };
-      }
-    </script>
-    <style>
-      .tBox{
-        border: 4px solid purple;
-      }
-      
-    </style>
+
   </head>
   <body>
 
@@ -61,16 +42,6 @@
         <p>&lt;!doctype html&gt;
 
    </p>
-     <h3>Leave a message(Press the image to submit):</h3><br>
-      <input class="tBox" type="text" text-color="red" ng-model="newMessage"></br>
-      <input  type="image" ng-click="add()" src="http://www.gravatar.com/avatar/e8a86a5cb2784f1e9834b2683fe8c032.png">
-      <br>
-      Messages: <br>
-      <ul>
-        <li ng-repeat="message in messages">
-          {{message}}
-        </li>
-      </ul>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/jackyFeng">jackyFeng</a></p>
